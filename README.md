@@ -13,7 +13,7 @@
 3. Crie um banco com o nome "db_crud" no MySQL do Xampp e de o comando "php artisan migrate", para que a tabela seja criada no banco de dados.
 
 ### Rotas
-1. Adiconar nova pessoa 
+1. Adiconar nova pessoa - 
 **POST:** 'localhost/crud/public/api/pessoas', 
 passando json: 
 {
@@ -24,13 +24,14 @@ passando json:
 	"hobby": ""
 }
 &nbsp;
-2. Listar todas as pessoas
+2. Listar todas as pessoas - 
 **GET:** 'localhost/crud/public/api/pessoas'
 &nbsp;
-4. Listar uma única pessoa
+4. Listar uma única pessoa - 
 **GET:** 'localhost/crud/public/api/pessoas/pessoas/id', passando o id da pessoa
 &nbsp;
-3. **PUT:** 'localhost/crud/public/api/pessoas/id', passando o id da pessoa a ser atualizada e json:
+3. Atualizar pessoa - 
+**PUT:** 'localhost/crud/public/api/pessoas/id', passando o id da pessoa a ser atualizada e json:
 {
 	"nome": "",
 	"sobrenome": "",
@@ -39,4 +40,5 @@ passando json:
 	"hobby": ""
 }
 &nbsp;
-4. **DELETE:** localhost/crud/public/api/pessoas/id, passando o id da pessoa a ser deleteda
+4. Deletar pessoa - 
+**DELETE:** localhost/crud/public/api/pessoas/id, passando o id da pessoa a ser deleteda
