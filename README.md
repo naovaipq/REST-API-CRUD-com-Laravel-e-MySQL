@@ -4,17 +4,17 @@
 ### Tecnologias Utilizadas
 - Laravel
 - MySQL
-- Xampp
 - Insomnia
 
 ### Instruções 
-1. Coloque o projeto dentro da pasta "htdocs" do Xampp.
-2. Inicie o servidor do Apache e o MySQL do Xampp.
-3. Crie um banco com o nome "db_crud" no MySQL do Xampp e de o comando "php artisan migrate", para que a tabela seja criada no banco de dados.
+2. Crie um banco com o nome "db_crud" no MySQL.
+1. Configure o banco MySQL no arquivo .env.
+3. Inicie o servidor do Laravel.
+4. De o comando "php artisan migrate", para que as tabela sejam criada no banco de dados.
 
 ### Rotas
 1. Adiconar nova pessoa - 
-**POST:** 'localhost/crud/public/api/pessoas', 
+**POST:** '/api/pessoas', 
 passando json: 
 {
 	"nome": "",
@@ -25,13 +25,13 @@ passando json:
 }
 &nbsp;
 2. Listar todas as pessoas - 
-**GET:** 'localhost/crud/public/api/pessoas'
+**GET:** '/api/pessoas'
 &nbsp;
 4. Listar uma única pessoa - 
-**GET:** 'localhost/crud/public/api/pessoas/pessoas/id', passando o id da pessoa
+**GET:** 'api/pessoas/id', informando o id da pessoa
 &nbsp;
 3. Atualizar pessoa - 
-**PUT:** 'localhost/crud/public/api/pessoas/id', passando o id da pessoa a ser atualizada e json:
+**PUT:** '/api/pessoas/id', informando o id da pessoa a ser atualizada e passando json:
 {
 	"nome": "",
 	"sobrenome": "",
@@ -40,5 +40,5 @@ passando json:
 	"hobby": ""
 }
 &nbsp;
-4. Deletar pessoa - 
-**DELETE:** localhost/crud/public/api/pessoas/id, passando o id da pessoa a ser deleteda
+4. Excluir pessoa - 
+**DELETE:** '/api/pessoas/id', informando o id da pessoa a ser deleteda
